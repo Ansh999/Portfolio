@@ -1,4 +1,4 @@
 export const Hero = () => {
-    return <section>akjhdahdla</section>
+    return <section></section>
 }
  
