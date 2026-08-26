@@ -5,12 +5,12 @@ const navLinks = [
     { href:"#about",label:"About"},
     {href:"#projects",label:"Projects"},
     {href:"#experience",label:"Experience"},
-    {href:"testimonials",label:"Testimonials"},
+    {href:"#testimonials",label:"Testimonials"},
 ];
 export const Navbar = () => {
     const [isMobilemenuOpen,setIsMobileMenuOpen] =useState(false)
     return (
-        <header className="fixed top-0 left-0 right-0 bg-transparent py-5">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-transparent py-5">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#" className="text-xl font-bold tracking-tight hover:text-primary"> 
                     Ansh<span className="text-primary">.</span>
@@ -41,7 +41,7 @@ export const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {isMobilemenuOpen && (<div className="md:hidden glass-strong animate-fade-in">
-                    <div className="container mx-auto px-6 py-6 flex-col gap-4">
+                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                         {navLinks.map((link,index) =>(
                             <a href={link.href} key={index} className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
                         ))}
