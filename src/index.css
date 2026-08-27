@@ -73,6 +73,6 @@
     }
   }
   .animate-fade-in{
-    animate:fade-in 0.8s ease-out-both;
+    animation: fade-in 0.8s ease-out both;
   }
 }
