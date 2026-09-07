@@ -11,11 +11,12 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
         </div>
 
-        {/* Green Dots */}\
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Green Dots */}
+        <div className="absolute inset-0 overflow-hidden">
             {[...Array(30)].map((_, i) => (
                 <div 
-                    className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+                    key={i}
+                    className="absolute w-1.5 h-1.5 rounded-full opacity-60 pointer-events-none"
                     style={{
                         backgroundColor:"#20B2A6",
                         left:`${Math.random() * 100}%`,
@@ -73,4 +74,3 @@ export const Hero = () => {
         </div>
     </section>
 }
- 
