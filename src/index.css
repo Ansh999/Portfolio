@@ -130,8 +130,12 @@
       stroke-dashoffset:-550;
     }
   }
-  .group:hover .animated-border-path:hover{
-    animation:animated-border 1.5s linear infinite;
+
+  /* Animate the CV border when the button is hovered.
+     The SVG has pointer-events-none, so the previous selector
+     requiring :hover on .animated-border-path could never match. */
+  .group:hover .animated-border-path{
+    animation: animated-border 1.5s linear infinite;
   }
 
   .animated-border:hover{
