@@ -31,9 +31,8 @@ export const AnimatedBorderButton = () =>{
             />
         </svg>
                                 
-        <span>
-            <Download />
-            Download CV
+            <span>
+            <Download />Download CV
             </span>
         </button>
     )

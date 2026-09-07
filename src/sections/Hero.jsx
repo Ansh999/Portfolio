@@ -1,5 +1,5 @@
 import {Button} from '@/components/Button'
-import { ArrowRight , Download } from 'lucide-react'
+import { ArrowRight} from 'lucide-react'
 import { AnimatedBorderButton } from '../components/AnimatedBorderButton'
 export const Hero = () => {
     return <section className="realative min-h-screen flex items-center overflow-hidden">
@@ -12,7 +12,7 @@ export const Hero = () => {
         </div>
 
         {/* Green Dots */}\
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 overflow-hidden ">
             {[...Array(30)].map((_, i) => (
                 <div 
                     className="absolute w-1.5 h-1.5 rounded-full opacity-60"
