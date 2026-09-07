@@ -1,3 +1,6 @@
+import {Button} from '@/components/Button'
+import { ArrowRight , Download } from 'lucide-react'
+import { AnimatedBorderButton } from '../components/AnimatedBorderButton'
 export const Hero = () => {
     return <section className="realative min-h-screen flex items-center overflow-hidden">
         
@@ -24,7 +27,49 @@ export const Hero = () => {
                     }}
                 />
             ))}
-            
+
+            {/* Content */}
+            <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    {/* Left Column - Text Content */}
+                    <div className="space-y-8">
+                        <div className="animate-fade-in">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                                <span className="w-2 h-2 bg-primary rounded-full" />
+                                    Software Engineer - React Specilist
+                                </span>
+                            
+                        </div>
+                        {/* Headline */}
+                        <div className="space-y-4">
+                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                                Crafting <span className="text-primary glow-text">digital</span>
+                                <br />
+                                experiences with
+                                <br />
+                                <span className="font-serif italic font-normal text-white">
+                                    precision
+                                </span>
+                            </h1>
+                            <p 
+                            className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                                Hi, I'm Ansh Pokhriyal - a software engineer specializing in React , Next.js and JavaScript. I build scalable , performant web applications that users love.
+                            </p>
+                        </div>
+                        {/* Call to Action(CTA) section */}
+                        <div>
+                            <Button size="lg">
+                                Contact Me <ArrowRight className="w-5 h-5"/>
+                            </Button>
+                            <AnimatedBorderButton/>
+                            
+                        </div>
+                    </div>
+                    {/* Right Column - Profile Image */}
+
+                </div>
+            </div>
+
         </div>
     </section>
 }
