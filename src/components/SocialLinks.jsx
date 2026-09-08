@@ -23,6 +23,8 @@ const socials = [
 export const SocialLinks = ({ className = '' }) => {
     return (
         <div className={`flex items-center gap-4 ${className}`}>
+            <span className="text-xl  text-muted-foreground animate-fade-in">Follow me: </span>
+            
             {socials.map(({ icon: Icon, href, label }, i) => (
                 <a
                     key={label}
