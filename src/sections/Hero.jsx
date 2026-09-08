@@ -1,6 +1,8 @@
 import {Button} from '@/components/Button'
 import { ArrowRight} from 'lucide-react'
 import { AnimatedBorderButton } from '../components/AnimatedBorderButton'
+import { SocialLinks } from '@/components/SocialLinks';
+
 export const Hero = () => {
     return <section className="realative min-h-screen flex items-center overflow-hidden">
         
@@ -11,8 +13,8 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
         </div>
 
-        {/* Green Dots */}\
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Green Dots */}
+        <div className="absolute inset-0 overflow-hidden ">
             {[...Array(30)].map((_, i) => (
                 <div 
                     key={i}
@@ -58,19 +60,19 @@ export const Hero = () => {
                             </p>
                         </div>
                         {/* Call to Action(CTA) section */}
-                        <div>
+                        <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5"/>
                             </Button>
-                            <AnimatedBorderButton/>
-                            
+                            <AnimatedBorderButton/>         
                         </div>
+                        <SocialLinks className=""mt-2 />
                     </div>
-                    {/* Right Column - Profile Image */}
 
+
+                    {/* Right Column - Profile Image */}
                 </div>
             </div>
-
         </div>
     </section>
 }
