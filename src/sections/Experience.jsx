@@ -1,3 +1,5 @@
 export const Experience = () => {
-    return <section></section>
+    return (
+        <section></section>
+    )
 }

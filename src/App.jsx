@@ -7,7 +7,7 @@ import { Testimonials } from "@/sections/Testimonials";
 import { Contact } from "@/sections/Contact";
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hiddenhidden">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
