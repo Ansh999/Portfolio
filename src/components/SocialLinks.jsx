@@ -1,6 +1,5 @@
 // src/components/SocialLinks.jsx
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const socials = [
     {
@@ -14,9 +13,9 @@ const socials = [
         label: 'LinkedIn',
     },
     {
-        icon: MdEmail,
-        href: 'mailto:anshpokhriyal@gmail.com',
-        label: 'Email',
+        icon: FaInstagram,
+        href: 'https://www.instagram.com/ansh_pokhriyal/',
+        label: 'Instagram',
     },
 ]
 
